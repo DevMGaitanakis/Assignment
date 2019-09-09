@@ -1,7 +1,15 @@
-@import 'node_modules/bootstrap/scss/bootstrap';
-
-$mycolor: blue;
+$primary: blue;
+$secondary: red;
 
 body {
-    background: $mycolor;
+    animation: bgs 2s ease-in-out 0.5s 12 backwards;;
+}
+
+@keyframes bgs {
+  from {
+  	background-color: $primary;
+  }
+  to {
+  	background-color: $secondary;
+  }
 }
